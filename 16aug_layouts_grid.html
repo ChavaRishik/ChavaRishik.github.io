@@ -1,0 +1,50 @@
+<html>
+    <head>
+<style>
+    .con{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas: 'header header header header header header header header'
+                              'article article article article article nav nav ads'
+                              'article article article article article nav nav ads'
+                              'article article article article article nav nav ads'
+                              'article article article article article nav nav ads'
+                              'foot foot foot foot foot foot foot foot ';
+        grid-gap: 5px;
+        height: 100vh;
+        }
+    .m{
+         background-color: yellow;
+         padding:10px ;
+    }
+    #a{
+        grid-area: header;
+    }
+        #b{
+        grid-area: article;
+    }
+        #c{
+        grid-area: nav;
+    }
+        #d{
+        grid-area: ads;
+    }
+        #e{
+        grid-area: foot;
+    }
+
+</style>
+    </head>
+    <body>
+        <div id="c">
+        <div class="con">
+        <div class="m" id="a">header</div>
+        <div class="m" id="b">Article</div>
+        <div class="m" id="c">Nav</div>
+        <div class="m" id="d">Ads</div>
+        <div class="m" id="e">Footer</div>
+        </div>
+
+    </div>
+    </body>
+</html>
