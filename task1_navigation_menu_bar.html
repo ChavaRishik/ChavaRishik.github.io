@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Horizontal Menu Bar</title>
+  <style>
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-bar {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 30px;
+    
+  }
+  
+  .menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 35px;
+  }
+  
+  .menu-bar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu-bar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 10px;
+  }
+  
+  .menu-bar li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 100px
+  }
+  
+  .search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Search this website">
+    </div>
+  </div>
+</body>
+</html>

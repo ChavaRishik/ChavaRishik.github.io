@@ -1,0 +1,81 @@
+<html>
+    <head>
+           <style>
+                .abc{
+
+                    border: 10px solid brown;
+                    text-align:center;
+                    font-size: 35px;      
+                }
+                .con{
+                    border: 20px solid brown;
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-areas:  "a a b b c d"
+                                           'e k b b c f'
+                                           'g h h i i j';
+
+                height: 100vh;
+                   
+                }
+                #a{
+                    grid-area: a;
+
+
+                }
+                #b{
+                    grid-area: b;
+
+                }
+                #c{
+                    grid-area: c;
+
+                }
+                #d{
+                    grid-area: d;
+
+                }
+                #e{
+                    grid-area:e;
+
+                }
+                #f{
+                    grid-area:f;
+
+                }
+                #g{
+                    grid-area: g;
+                }
+                #h{
+                    grid-area: h;
+                }
+                #i{
+                    grid-area: i;
+                }
+                #j{
+                    grid-area: j;
+                }
+                #k{
+                    grid-area: k;
+                }
+
+           </style>
+    </head>
+    <body>
+  
+    <div class="con">
+            <div class="abc" id="a">1</div>
+            <div class="abc" id="b">2</div>
+            <div class="abc" id="c">3</div>
+            <div class="abc" id="d">4</div>
+            <div class="abc" id="e">5</div> 
+            <div class="abc" id="f">6 </div> 
+            <div class="abc" id="g">7</div> 
+            <div class="abc" id="h">8</div>
+            <div class="abc" id="i">9</div>
+            <div class="abc" id="j">10</div> 
+            <div class="abc" id="k">11</div>  
+
+    </div>
+    </body>
+</html>
